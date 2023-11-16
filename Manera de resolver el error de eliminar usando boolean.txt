@@ -1,0 +1,34 @@
+Metodo:
+public static boolean[] eliminarTarea(int i){
+        boolean tareaEliminada = true;
+        boolean error = false;
+        if (i > listaDeTareas.size()) {
+            tareaEliminada = false;
+            error = true;
+        } else {
+        String[] tarea = listaDeTareas.get(i);
+        listaDeTareas.remove(i);
+        for (int j = 0; j < listaDeTareas.size(); j++){
+            String[] tareaAuxiliar = listaDeTareas.get(j);
+            if (tarea[0] == tareaAuxiliar[0]){
+                tareaEliminada = false;
+            }
+        }
+        } return new boolean[]{tareaEliminada, error};
+    }
+
+Main Java:
+case 6:
+                    System.out.println("Ingrese el id de la tarea que desea eliminar");
+                    idTarea = leer.nextInt();
+                    boolean[] valorEliminado = TodoList.eliminarTarea(idTarea);
+                    if (valorEliminado[0]){
+                        System.out.println("La tarea fue eliminada exitosamente!");
+                    } else {
+                        if (valorEliminado[1]){
+                            System.out.println("Numero fuera de rango");
+                        }else {
+                            System.out.println("La tarea no fue eliminada :( ");
+                        }
+                    }
+                    break;

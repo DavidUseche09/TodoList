@@ -1,0 +1,17 @@
+Todo list
+1. Agregar una tarea
+	El sistema debe agregar una tarea a una *lista* de tareas pendientes
+2. Completar una tarea -> Con tiempo gastado
+	El sistema debe cambiar el estado de una tarea de pendiente a completada y agregar el tiempo utilizado en la misma
+3. Listar las tareas pendientes
+	El sistema debe mostrar por consola la lista de tareas pendientes
+4. Listar las tareas completas
+	El sistema debe mostrar por consola la lista de tareas completadas con el tiempo utilizado en cada una
+5. Listar todas las tareas
+	El sistema debe mostrar por consola la lista de tareas
+6. Eliminar una tarea
+	El sistema debe eliminar de la lista de tareas una tarea solicitada
+7. Actualizar una tarea
+	El sistema debe permitir actualizar la descripción de una tarea que no esté completada
+8. Ver detalle de tarea
+	El sistema debe mostrar por consola el detalle de la tarea solicitado con la identificación o código.
